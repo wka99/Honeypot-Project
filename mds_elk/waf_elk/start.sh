@@ -112,7 +112,7 @@ else
   fi
 
   if [ -z "$ELASTICSEARCH_URL" ]; then
-    ELASTICSEARCH_URL=${ES_PROTOCOL:-http}://localhost:9200
+    ELASTICSEARCH_URL=${ES_PROTOCOL:-http}://52.55.249.172:9200
   fi
 
   counter=0
@@ -217,7 +217,7 @@ if [ -x /usr/local/bin/elk-post-hooks.sh ]; then
     fi
 
     if [ -z "$KIBANA_URL" ]; then
-      KIBANA_URL=http://localhost:5601
+      KIBANA_URL=http://52.55.249.172:5601
     fi
 
     counter=0
